@@ -2,7 +2,7 @@
 
 This is the official code of the paper: Hierarchical Dynamic Image Harmonization.
 
-# After obtaining the public license of Ant Group, we will open our code.
+After obtaining the public license of Ant Group, we will open our code.
 
 ## :bookmark: Citation
 If you find our work useful, please consider citing our work using the bibtex:
