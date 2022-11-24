@@ -2,6 +2,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hierarchical-dynamic-image-harmonization/image-harmonization-on-iharmony4)](https://paperswithcode.com/sota/image-harmonization-on-iharmony4?p=hierarchical-dynamic-image-harmonization)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hierarchical-dynamic-image-harmonization/image-harmonization-on-hadobe5k-1024-times)](https://paperswithcode.com/sota/image-harmonization-on-hadobe5k-1024-times?p=hierarchical-dynamic-image-harmonization)
+
 This is the official code of the paper: Hierarchical Dynamic Image Harmonization.
 
 After obtaining the public license of Ant Group, we will open our code.
