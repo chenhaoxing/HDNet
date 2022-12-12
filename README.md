@@ -6,7 +6,7 @@
 
 
 This is the official code of the paper: Hierarchical Dynamic Image Harmonization.
-![](Doc/arch.png)
+![](Doc/hdnet.png)
 > [**Hierarchical Dynamic Image Harmonization**](https://arxiv.org/abs/2212.02773)               
 > [Haoxing Chen](https://scholar.google.com/citations?hl=zh-CN&pli=1&user=BnS7HzAAAAAJ), [Zhangxuan Gu](https://scholar.google.com/citations?user=Wkp3s68AAAAJ&hl=zh-CN&oi=ao), [Yaohui Li](https://scholar.google.com/citations?user=pC2kmQoAAAAJ&hl=zh-CN), Jun Lan, Changhua Meng, [Weiqiang Wang](https://scholar.google.com/citations?hl=zh-CN&user=yZ5iffAAAAAJ), [Huaxiong Li](https://scholar.google.com/citations?user=AC-EDw0AAAAJ&hl=zh-CN) 
 > *[arXiv 2211.08639](https://arxiv.org/abs/2211.08639)*  
