@@ -11,14 +11,6 @@ This is the official code of the paper: Hierarchical Dynamic Image Harmonization
 > [Haoxing Chen](https://scholar.google.com/citations?hl=zh-CN&pli=1&user=BnS7HzAAAAAJ), [Zhangxuan Gu](https://scholar.google.com/citations?user=Wkp3s68AAAAJ&hl=zh-CN&oi=ao), [Yaohui Li](https://scholar.google.com/citations?user=pC2kmQoAAAAJ&hl=zh-CN), Jun Lan, Changhua Meng, [Weiqiang Wang](https://scholar.google.com/citations?hl=zh-CN&user=yZ5iffAAAAAJ), [Huaxiong Li](https://scholar.google.com/citations?user=AC-EDw0AAAAJ&hl=zh-CN) 
 > *[arXiv 2211.08639](https://arxiv.org/abs/2211.08639)*  
 
-### Table of Contents
-1. [Introduction](#introduction)
-1. [Preparation](#preparation)
-1. [Usage](#usage)
-1. [Results](#results)
-1. [Citation](#citation)
-1. [Acknowledgement](#acknowledgement)
-
 ## Preparation
 ### 1. Clone this repo:
 ```bash
