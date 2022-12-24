@@ -47,11 +47,10 @@ python train_evaluate.py --dataset_root <DATA_DIR> --save_dir results --batch_si
 
 
 ## Citing DiffusionInst
-
-If you use DiffusionInst in your research or wish to refer to the baseline results published here, please use the following BibTeX entry.
+If you use HDNet in your research, please use the following BibTeX entry.
 
 ```BibTeX
-@article{DiffusionInst,
+@article{HDNet,
       title={Hierarchical Dynamic Image Harmonization},
       author={Chen, Haoxing and Gu, Zhangxuan and Yaohui Li and Lan, Jun and Meng, Changhua and Wang, Weiqiang and Li, Huaxiong},
       journal={arXiv preprint arXiv: 2211.08639},
