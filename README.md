@@ -7,7 +7,7 @@
 
 This is the official code of the paper: Hierarchical Dynamic Image Harmonization.
 ![](Doc/hdnet.png)
-> [**Hierarchical Dynamic Image Harmonization**](https://arxiv.org/abs/2212.02773)               
+> [**Hierarchical Dynamic Image Harmonization**](https://arxiv.org/abs/2211.08639)               
 > [Haoxing Chen](https://scholar.google.com/citations?hl=zh-CN&pli=1&user=BnS7HzAAAAAJ), [Zhangxuan Gu](https://scholar.google.com/citations?user=Wkp3s68AAAAJ&hl=zh-CN&oi=ao), [Yaohui Li](https://scholar.google.com/citations?user=pC2kmQoAAAAJ&hl=zh-CN), Jun Lan, Changhua Meng, [Weiqiang Wang](https://scholar.google.com/citations?hl=zh-CN&user=yZ5iffAAAAAJ), [Huaxiong Li](https://scholar.google.com/citations?user=AC-EDw0AAAAJ&hl=zh-CN) 
 > *[arXiv 2211.08639](https://arxiv.org/abs/2211.08639)*  
 
@@ -44,6 +44,21 @@ python train_evaluate.py --dataset_root <DATA_DIR> --save_dir results --batch_si
 ## Results
 ![](Doc/result1.png)
 ![](Doc/result2.png)
+
+
+## Citing DiffusionInst
+
+If you use DiffusionInst in your research or wish to refer to the baseline results published here, please use the following BibTeX entry.
+
+```BibTeX
+@article{DiffusionInst,
+      title={Hierarchical Dynamic Image Harmonization},
+      author={Chen, Haoxing and Gu, Zhangxuan and Yaohui Li and Lan, Jun and Meng, Changhua and Wang, Weiqiang and Li, Huaxiong},
+      journal={arXiv preprint arXiv: 2211.08639},
+      year={2022}
+}
+```
+
 
 ## Acknowledgement
 Many thanks to the nice work of  [RainNet](https://github.com/junleen/RainNet). Our codes and configs follow [RainNet](https://github.com/junleen/RainNet).
