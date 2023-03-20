@@ -44,7 +44,7 @@ We provide the code in train_evaluate.py, which supports the model training, eva
 python train_evaluate.py --dataset_root <DATA_DIR> --save_dir results --batch_size 12 --device cuda 
 ```
 
-## Citing DiffusionInst
+## Citing HDNet
 If you use HDNet in your research, please use the following BibTeX entry.
 
 ```BibTeX
