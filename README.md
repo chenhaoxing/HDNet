@@ -1,12 +1,9 @@
 ## Hierarchical Dynamic Image Harmonization
 
-
-# I'm sorry, we have temporarily removed the code of our model. This is because we have made some new progress and the PSNR can reach 40+. We will release our latest code and pre-trained models in April.
-
-
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hierarchical-dynamic-image-harmonization/image-harmonization-on-iharmony4)](https://paperswithcode.com/sota/image-harmonization-on-iharmony4?p=hierarchical-dynamic-image-harmonization)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hierarchical-dynamic-image-harmonization/image-harmonization-on-hadobe5k-1024-times)](https://paperswithcode.com/sota/image-harmonization-on-hadobe5k-1024-times?p=hierarchical-dynamic-image-harmonization)
+
 
 This is the official code of the paper: Hierarchical Dynamic Image Harmonization.
 ![](Doc/hdnet.png)
@@ -44,7 +41,12 @@ We provide the code in train_evaluate.py, which supports the model training, eva
 python train_evaluate.py --dataset_root <DATA_DIR> --save_dir results --batch_size 12 --device cuda 
 ```
 
-## Citing HDNet
+## Results
+![](Doc/result1.png)
+![](Doc/result2.png)
+
+
+## Citing DiffusionInst
 If you use HDNet in your research, please use the following BibTeX entry.
 
 ```BibTeX
