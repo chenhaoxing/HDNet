@@ -16,7 +16,9 @@ class LocalDynamics(nn.Module):
         flattened_features_query = x * mask
         flattened_features_support = x * (1-mask)
         
-        flattened_features = x.view(B, C, -1)
+        flattened_features_query = flattened_features_query.view(B, C, -1)
+        flattened_features_support = flattened_features_support.view(B, C, -1)
+        
         masked_features = []
         for i in range(B):
 
