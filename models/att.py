@@ -20,9 +20,11 @@ class LocalDynamics(nn.Module):
         masked_features = []
         for i in range(B):
 
-            features = flattened_features[i].view(C, -1)
-            query = features.unsqueeze(0)
-            support = features.unsqueeze(0)
+            query_features = flattened_features_query[i].view(C, -1)
+            support_features = flattened_features_support[i].view(C, -1)
+            
+            query = query_features.unsqueeze(0)
+            support = support_features.unsqueeze(0)
 
             simi_matrix = torch.matmul(query.permute(0, 2, 1), support)
             
