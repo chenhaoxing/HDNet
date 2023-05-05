@@ -12,6 +12,10 @@ class LocalDynamics(nn.Module):
     def forward(self, x, mask):
         mask = F.interpolate(mask.detach(), size=x.size()[2:], mode='nearest')
         B, C, H, W = x.shape
+        
+        flattened_features_query = x * mask
+        flattened_features_support = x * (1-mask)
+        
         flattened_features = x.view(B, C, -1)
         masked_features = []
         for i in range(B):
