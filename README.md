@@ -46,7 +46,7 @@ python train_evaluate.py --dataset_root <DATA_DIR> --save_dir results --batch_si
 ![](Doc/result2.jpg)
 
 
-## Citing DiffusionInst
+## Citing HDNet
 If you use HDNet in your research, please use the following BibTeX entry.
 
 ```BibTeX
