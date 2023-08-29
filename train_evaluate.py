@@ -50,7 +50,7 @@ def evaluateModel(epoch_number, model, opt, test_dataset, epoch, max_psnr, iters
             mse_score_op = mean_squared_error(util.tensor2im(pred), util.tensor2im(gt))
             psnr_score_op = peak_signal_noise_ratio(util.tensor2im(gt), util.tensor2im(pred), data_range=255)
             fmse_score_op = mean_squared_error(util.tensor2im(pred), util.tensor2im(gt)) * 256 * 256 / fore_nums
-            ssim_score = ssim(util.tensor2im(pred), util.tensor2im(gt),data_range=255,multichannel=True)
+            ssim_score = ssim(util.tensor2im(pred), util.tensor2im(gt), data_range=255, channel_axis=-1)
             
             if epoch >= 100:
                 pred_rgb = util.tensor2im(pred)
