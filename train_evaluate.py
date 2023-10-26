@@ -107,6 +107,9 @@ def updateWriterInterval(writer, metrics, epoch):
 if __name__ == '__main__':
     # setup_seed(6)
     opt = TrainOptions().parse()   # get training 
+    # check if gpus is are mutiple if so warn it could lead to inefficiency
+    if len(opt.gpu_ids) > 1:
+        print('WARNING: Multiple GPUs detected, this could lead to inefficiency')
     train_dataset = CustomDataset(opt, is_for_train=True)
     test_dataset = CustomDataset(opt, is_for_train=False)
     train_dataset_size = len(train_dataset)    # get the number of images in the dataset.
