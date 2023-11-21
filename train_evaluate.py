@@ -37,7 +37,7 @@ def evaluateModel(epoch_number, model, opt, test_dataset, epoch, max_psnr, iters
     eval_results_fstr = open(eval_path, 'w')
     eval_results = {'mask': [], 'mse': [], 'psnr': [], 'fmse':[], 'ssim':[]}
 
-    for i, data in tqdm(enumerate(test_dataset)):
+    for i, data in tqdm(enumerate(test_dataset), total=len(train_dataloader)):
         model.set_input(data)  # unpack data from data loader
         model.test()  # inference
         visuals = model.get_current_visuals()  # get image results
@@ -107,6 +107,9 @@ def updateWriterInterval(writer, metrics, epoch):
 if __name__ == '__main__':
     # setup_seed(6)
     opt = TrainOptions().parse()   # get training 
+    # check if gpus is are mutiple if so warn it could lead to inefficiency
+    if len(opt.gpu_ids) > 1:
+        print('WARNING: Multiple GPUs detected, this could lead to inefficiency')
     train_dataset = CustomDataset(opt, is_for_train=True)
     test_dataset = CustomDataset(opt, is_for_train=False)
     train_dataset_size = len(train_dataset)    # get the number of images in the dataset.
@@ -125,12 +128,12 @@ if __name__ == '__main__':
 
     max_psnr = 0
     max_epoch = 1
-    for epoch in range(opt.load_iter+1, opt.niter + opt.niter_decay + 1):
+    for epoch in tqdm(range(opt.load_iter+1, opt.niter + opt.niter_decay + 1)):
         epoch_start_time = time.time()  # timer for entire epoch
         iter_data_time = time.time()    # timer for data loading per iteration
         epoch_iter = 0                  # the number of training iterations in current epoch, reset to 0 every epoch
 
-        for i, data in tqdm(enumerate(train_dataloader)):  # inner loop within one epoch
+        for i, data in tqdm(enumerate(train_dataloader), total=len(train_dataloader), keep=False):  # inner loop within one epoch
             iter_start_time = time.time()  # timer for computation per iteration
             if total_iters % opt.print_freq == 0:
                 t_data = iter_start_time - iter_data_time
@@ -164,6 +167,6 @@ if __name__ == '__main__':
 
         print('End of epoch %d / %d \t Time Taken: %d sec' % (epoch, opt.niter + opt.niter_decay, time.time() - epoch_start_time))
         model.update_learning_rate()                     # update learning rates at the end of every epoch.
-        print('Current learning rate: {}'.format(model.schedulers[0].get_lr()))
+        print('Current learning rate: {}'.format(model.schedulers[0].get_last_lr()))
 
     writer.close()
