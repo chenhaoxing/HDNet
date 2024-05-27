@@ -23,13 +23,13 @@ cd HDNet
 
 install the required packages using pip: 
 ```bash
-pip3 install -r requirements.txt
+pip3 install -r requirement.txt
 ```
 or conda:
 ```bash
 conda create -n rainnet python=3.8
 conda activate rainnet
-pip install -r requirements.txt
+pip install -r requirement.txt
 ```
 ### 3. Prepare the data
 Download [iHarmony4](https://github.com/bcmi/Image-Harmonization-Dataset-iHarmony4) dataset in dataset folder and run  `data/preprocess_iharmony4.py` to resize the images (eg, 512x512, or 256x256) and save the resized images in your local device. 
