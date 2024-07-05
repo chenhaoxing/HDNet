@@ -62,6 +62,6 @@ If you use HDNet in your research, please use the following BibTeX entry.
 Many thanks to the nice work of  [RainNet](https://github.com/junleen/RainNet). Our codes and configs follow [RainNet](https://github.com/junleen/RainNet).
 
 ## Contacts
-Please feel free to contact us if you have any problems.
+Please feel free to contact us if you have any problems. 
 
 Email: [haoxingchen@smail.nju.edu.cn](haoxingchen@smail.nju.edu.cn) or [hx.chen@hotmail.com](chen@hotmail.com)
